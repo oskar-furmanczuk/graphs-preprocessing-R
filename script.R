@@ -1,4 +1,4 @@
-# Function to parse text to vectors
+# Function to parse text into vectors
 
 readInGraph <- function(path){
   con <- file(path, open='r')
@@ -17,7 +17,7 @@ readInGraph <- function(path){
   return(outter_list)
 }
 
-#Example
+# Example
 l_graph <- readInGraph("graph_small.dat")
 
 df <- data.frame( node = 1:length(l_graph),
